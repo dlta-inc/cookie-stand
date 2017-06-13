@@ -11,13 +11,13 @@ Working on a non-master branch, with regular commit history
 Good use of Object Literals (no constructors allowed today); one for each store model; properties/values and methods are correctly constructed and given meaningful names
 Main page meets requirements of the problem domain
 Stores are correctly rendering as lists to the main page */
-class 'OlyStore';
-
-class 'SeaStore';
-
-class 'TriCitiesStore';
-
-class 'VancouverStore';
+// class 'OlyStore';
+//
+// class 'SeaStore';
+//
+// class 'TriCitiesStore';
+//
+// class 'VancouverStore';
 
 
 // depends on the hours of operation (6:00 AM to 8:00 PM for all locations) and a few factors unique to each location:
@@ -49,5 +49,15 @@ formEl.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event){
    event.preventDefault();
-   console.log(event);
+   // console.log(event.target.itemName.value);
+   // console.log(event.target.itemPrice.value);
+   // console.log(event.target.itemColor.value);
+
+   var itemName = event.target.itemName.value;
+   var itemPrice = event.target.itemPrice.value;
+   var itemColor = event.target.itemColor.value;
+
+   var newItem = new Item (itemName, itemPrice, itemColor);
+   console.log(newItem);
+   newItem.makeRow();
 }
