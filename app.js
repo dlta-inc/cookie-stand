@@ -25,3 +25,29 @@ class 'VancouverStore';
 // The minimum number of customers per hour.
 // The maximum number of customers per hour.
 // The average number of cookies purchased per customer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*....................CLASS 8 :: FORMS......................*/
+var formEl = document.getElementById ('form');
+
+formEl.addEventListener('submit', handleSubmit);
+
+
+
+
+function handleSubmit(event){
+   event.preventDefault();
+   console.log(event);
+}
