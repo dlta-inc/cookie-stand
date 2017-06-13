@@ -18,3 +18,10 @@ class 'SeaStore';
 class 'TriCitiesStore';
 
 class 'VancouverStore';
+
+
+// depends on the hours of operation (6:00 AM to 8:00 PM for all locations) and a few factors unique to each location:
+//
+// The minimum number of customers per hour.
+// The maximum number of customers per hour.
+// The average number of cookies purchased per customer.
