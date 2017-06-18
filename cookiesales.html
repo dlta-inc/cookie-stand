@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title id = 'Sales'>Salmon Cookie Emporium Sales</title>
+      <link rel = "stylesheet" type = "text/css" href = "lab7.css" />
+      <div id = 'navbar'>
+         <input type= 'button' value = 'Home' onclick = "location.href = 'lab7.html'"/>
+         <input type= 'button' value = 'Cookie Sales Results' onclick = "location.href = 'lab7sales.html'"/>
+   </head>
+   <body>
+
+
+      <section id = 'salespageheading'>
+         <h1>Sales Results!</h1>
+         <form id='form'>
+         <fieldset>
+            <legend>New Store Information:</legend>
+
+            <div>
+               <label for='location'>Store Name:</label>
+               <input id="store-name-input" type="text" name='location'placeholder='' required>
+            </div>
+
+            <div>
+               <label for= 'minCustPerHour'>Minimum Customers Per Hour:</label>
+               <input type='text' min='0.001' step ='any' name='minCustPerHour' value=''>
+            </div>
+
+            <div>
+               <label for='maxCustPerHour'>Maximum Customers Per Hour:</label>
+               <input type='text' min='0.001' step ='any' name='maxCustPerHour' value=''>
+            </div>
+
+            <div>
+               <label for='avgCookiesSold'>Average Cookie Sales:</label>
+               <input type='text' min='0.001' step ='any' name='avgCookiesSold' value=''>
+            </div>
+
+            <input type= 'submit' value= 'Add New Store'>
+         </fieldset>
+         </form>
+      </section>
+         <table id = 'cookieTable'>
+           <tbody>
+             <thead>
+               <h2>Hours Available</h2>
+             </thead>
+              <tr>
+                <td>Store Name</td>
+                <td>6am</td>
+                <td>7am</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td>12pm</td>
+                <td>1pm</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td>7pm</td>
+                <td>8pm</td>
+              </tr>
+         </table>
+      <script src="lab6.js"></script>
+
+   </body>
+</html>
