@@ -2,16 +2,19 @@
 <html>
    <head>
       <title id = 'Sales'>Salmon Cookie Emporium Sales</title>
-      <link rel = "stylesheet" type = "text/css" href = "lab7.css" />
+      <link rel = "stylesheet" type = "text/css" href = "cookie.css" />
       <div id = 'navbar'>
-         <input type= 'button' value = 'Home' onclick = "location.href = 'lab7.html'"/>
-         <input type= 'button' value = 'Cookie Sales Results' onclick = "location.href = 'lab7sales.html'"/>
+         <input type= 'button' value = 'Home' onclick = "location.href = 'cookie.html'"/>
+         <input type= 'button' value = 'Cookie Sales Results' onclick = "location.href = 'cookiesales.html'"/>
    </head>
    <body>
 
 
-      <section id = 'salespageheading'>
+      <section id='salespageheading'>
          <h1>Sales Results!</h1>
+      <section/>
+
+      <section id='totalform'>
          <form id='form'>
          <fieldset>
             <legend>New Store Information:</legend>
@@ -40,31 +43,50 @@
          </fieldset>
          </form>
       </section>
-         <table id = 'cookieTable'>
-           <tbody>
+
+      <section id='table'>
+         <table>
              <thead>
                <h2>Hours Available</h2>
-             </thead>
               <tr>
                 <td>Store Name</td>
                 <td>6am</td>
+                  <input value='1'/>
                 <td>7am</td>
+                  <input value='2' />
                 <td>8am</td>
+                  <input value='3' />
                 <td>9am</td>
+                  <input value='4' />
                 <td>10am</td>
+                  <input value='5' />
                 <td>11am</td>
+                  <input value='6' />
                 <td>12pm</td>
+                  <input value='7' />
                 <td>1pm</td>
+                  <input value='8' />
                 <td>2pm</td>
+                  <input value='9' />
                 <td>3pm</td>
+                  <input value='10' />
                 <td>4pm</td>
+                  <input value='11' />
                 <td>5pm</td>
+                  <input value='12' />
                 <td>6pm</td>
+                  <input value='13' />
                 <td>7pm</td>
+                  <input value='14' />
                 <td>8pm</td>
+                  <input value='15' />
               </tr>
+           </thead>
+           <tbody id ='cookieTable'>
+          </tbody>
          </table>
-      <script src="lab6.js"></script>
+      </section>
+      <script src="cookie.js"></script>
 
    </body>
 </html>
