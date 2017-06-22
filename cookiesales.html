@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title id = 'Sales'>Salmon Cookie Emporium Sales</title>
-      <link rel = "stylesheet" type = "text/css" href = "cookie.css" />
-      <div id = 'navbar'>
-         <input type= 'button' value = 'Home' onclick = "location.href = 'cookie.html'"/>
-         <input type= 'button' value = 'Cookie Sales Results' onclick = "location.href = 'cookiesales.html'"/>
-   </head>
-   <body>
 
+<head>
+   <title id='Sales'>Salmon Cookie Emporium Sales</title>
+   <link rel="stylesheet" type="text/css" href="cookie.css" />
+   <div id='navbar'>
+      <input type='button' value='Home' onclick="location.href = 'cookie.html'" />
+      <input type='button' value='Cookie Sales Results' onclick="location.href = 'cookiesales.html'" />
+</head>
 
-      <section id='salespageheading'>
-         <h1>Sales Results!</h1>
+<body>
+
+   <section id='salespageheading'>
+      <h1>Sales Results!</h1>
       <section/>
 
       <section id='totalform'>
          <form id='form'>
-         <fieldset>
-            <legend>New Store Information:</legend>
+            <fieldset>
+               <legend>New Store Information:</legend>
 
-            <div>
-               <label for='location'>Store Name:</label>
-               <input id="store-name-input" type="text" name='location'placeholder='' required>
-            </div>
+               <div>
+                  <label for='location'>Store Name:</label>
+                  <input id="store-name-input" type="text" name='location' placeholder='' required>
+               </div>
 
-            <div>
-               <label for= 'minCustPerHour'>Minimum Customers Per Hour:</label>
-               <input type='text' min='0.001' step ='any' name='minCustPerHour' value=''>
-            </div>
+               <div>
+                  <label for='minCustPerHour'>Minimum Customers Per Hour:</label>
+                  <input type='text' min='0.001' step='any' name='minCustPerHour' value=''>
+               </div>
 
-            <div>
-               <label for='maxCustPerHour'>Maximum Customers Per Hour:</label>
-               <input type='text' min='0.001' step ='any' name='maxCustPerHour' value=''>
-            </div>
+               <div>
+                  <label for='maxCustPerHour'>Maximum Customers Per Hour:</label>
+                  <input type='text' min='0.001' step='any' name='maxCustPerHour' value=''>
+               </div>
 
-            <div>
-               <label for='avgCookiesSold'>Average Cookie Sales:</label>
-               <input type='text' min='0.001' step ='any' name='avgCookiesSold' value=''>
-            </div>
+               <div>
+                  <label for='avgCookiesSold'>Average Cookie Sales:</label>
+                  <input type='text' min='0.001' step='any' name='avgCookiesSold' value=''>
+               </div>
 
-            <input type= 'submit' value= 'Add New Store'>
-         </fieldset>
+               <input type='submit' value='Add New Store'>
+            </fieldset>
          </form>
       </section>
 
       <section id='table'>
          <table>
-             <thead>
+            <thead>
                <h2>Hours Available</h2>
-              <tr>
-                <td>Store Name</td>
-                <td>6am</td>
-                  <input value='1'/>
-                <td>7am</td>
+               <tr>
+                  <td>Store Name</td>
+                  <td>6am</td>
+                  <input value='1' />
+                  <td>7am</td>
                   <input value='2' />
-                <td>8am</td>
+                  <td>8am</td>
                   <input value='3' />
-                <td>9am</td>
+                  <td>9am</td>
                   <input value='4' />
-                <td>10am</td>
+                  <td>10am</td>
                   <input value='5' />
-                <td>11am</td>
+                  <td>11am</td>
                   <input value='6' />
-                <td>12pm</td>
+                  <td>12pm</td>
                   <input value='7' />
-                <td>1pm</td>
+                  <td>1pm</td>
                   <input value='8' />
-                <td>2pm</td>
+                  <td>2pm</td>
                   <input value='9' />
-                <td>3pm</td>
+                  <td>3pm</td>
                   <input value='10' />
-                <td>4pm</td>
+                  <td>4pm</td>
                   <input value='11' />
-                <td>5pm</td>
+                  <td>5pm</td>
                   <input value='12' />
-                <td>6pm</td>
+                  <td>6pm</td>
                   <input value='13' />
-                <td>7pm</td>
+                  <td>7pm</td>
                   <input value='14' />
-                <td>8pm</td>
+                  <td>8pm</td>
                   <input value='15' />
-              </tr>
-           </thead>
-           <tbody id ='cookieTable'>
-          </tbody>
+               </tr>
+            </thead>
+            <tbody id='cookieTable'>
+            </tbody>
          </table>
       </section>
       <script src="cookie.js"></script>
 
-   </body>
+</body>
+
 </html>
