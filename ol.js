@@ -23,10 +23,9 @@ for (var i = 0; i < hrsOpen.length; i++) {
    listItemElement.textContent = hrsOpen[i] + ' : ' + totalCookiesSold + ' cookies';
    ulElement.appendChild(listItemElement);
    console.log(ulElement.children);
-
 };
 
-//listItemElement.textContent = 'Total Cookies Sold @ ' + pikeStore.location + ': ' sumTotalCookiesSold;
+listItemElement.textContent = 'Total Cookies Sold @ ' + pikeStore.location + ': ' + sumTotalCookiesSold;
 
 var seaTac = {
    location: 'SeaTac Airport',
@@ -50,7 +49,7 @@ for (var i = 0; i < hrsOpen.length; i++) {
    console.log(ulElement.children);
 };
 
-//listItemElement.textContent = 'Total Cookies Sold @ ' + seaTac.location + ': ' sumTotalCookiesSold;
+listItemElement.textContent = 'Total Cookies Sold @ ' + seaTac.location + ': ' + sumTotalCookiesSold;
 
 var  seaCenter = {
    location: 'Seattle Center',
@@ -74,7 +73,7 @@ for (var i = 0; i < hrsOpen.length; i++) {
    console.log(ulElement.children);
 };
 
-//listItemElement.textContent = 'Total Cookies Sold @ ' + seaCenter.location + ': ' sumTotalCookiesSold;
+listItemElement.textContent = 'Total Cookies Sold @ ' + seaCenter.location + ': ' +  sumTotalCookiesSold;
 
 var  capHill = {
    location: 'Capitol Hill',
@@ -98,7 +97,7 @@ var listItemElement = document.createElement ('li');
    console.log(ulElement.children);
 };
 
- //listItemElement.textContent = 'Total Cookies Sold @ ' + capHill.location + ': ' + sumTotalCookiesSold;
+ listItemElement.textContent = 'Total Cookies Sold @ ' + capHill.location + ': ' + sumTotalCookiesSold;
 
 var  alki = {
    location: 'Alki',
@@ -122,4 +121,4 @@ for (var i = 0; i < hrsOpen.length; i++) {
    console.log(ulElement.children);
 };
 
-//listItemElement.textContent = 'Total Cookies Sold @ ' + alki.location + ': ' + sumTotalCookiesSold;
+listItemElement.textContent = 'Total Cookies Sold @ ' + alki.location + ': ' + sumTotalCookiesSold;
